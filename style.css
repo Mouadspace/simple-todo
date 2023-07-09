@@ -1,0 +1,114 @@
+/* ---------- */
+/* RESET */
+/* ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ---------- */
+/* GENERAL STYLE */
+/* ---------- */
+:root {
+  /* PRIMARY COLOR */
+
+  /* GREY COLOR */
+  --clr-txt-8: #343a40;
+  --clr-txt-7: #495057;
+}
+body {
+  font-family: "Inter", sans-serif;
+  color: var(--clr-txt-8);
+  /* FLEX LAYOUT */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* COMPONENTS STYLE */
+
+/* HEADER */
+.main-title {
+  margin: 32px 0;
+}
+
+/* FORM */
+.todo-input {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f1f3f5;
+  margin-bottom: 40px;
+}
+.todo-input:focus {
+  outline: none;
+}
+
+.todo-add:hover {
+  background-color: #dee2e6;
+}
+
+/* TODO CONTAINER */
+.todo-container {
+  width: 280px;
+  padding: 40px 30px;
+  border-radius: 8px;
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.07);
+  color: var(--clr-txt-7);
+}
+/* UL */
+.todo-list {
+  list-style: none;
+}
+/* LI */
+.todo-item {
+  margin-bottom: 16px;
+  /* FLEX LAYOUT */
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  transition: all 1s ease;
+}
+.todo-task {
+  flex: 1;
+}
+/* BUTTONS */
+.todo-check,
+.todo-delete {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+/* REMOVE POINTER EVENT FROM CHECK AND DELETE BUTTONS */
+.fas {
+  pointer-events: none;
+}
+
+.checked {
+  text-decoration: line-through;
+}
+.fall {
+  transform: translateY(5rem);
+  opacity: 0;
+}
+/* SELECT OPTION */
+select {
+  outline: none;
+  border: none;
+  box-shadow: 0;
+  padding: 16px;
+  border-radius: 8px;
+}
+.select {
+  margin-bottom: 8px 16px;
+}
+option {
+  color: #343a40;
+}
